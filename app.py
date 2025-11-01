@@ -98,7 +98,8 @@ def get_portfolio_insights(portfolio_data, market_data):
 GEMINI_API_KEY = st.secrets["gemini_api_key"]
 SERPER_API_KEY = st.secrets["serper_api_key"]
 
-genai.configure(api_key=gemini_api_key)
+
+genai.configure(api_key=GEMINI_API_KEY)
 st.set_page_config(page_title="Fin-AI-lytics", layout="wide")
 st.title("Fin-AI-lytics")
 if "messages" not in st.session_state:
@@ -127,7 +128,7 @@ def get_market_news(query, num_results=5):
         "num": num_results
     })
     headers = {
-        'X-API-KEY': serper_api_key,
+        'X-API-KEY': SERPER_API_KEY,
         'Content-Type': 'application/json'
     }
     try:

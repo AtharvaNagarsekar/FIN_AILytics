@@ -1,0 +1,16 @@
+streamlit
+google-generativeai
+requests
+yfinance
+scikit-learn
+xgboost
+lightgbm
+tensorflow
+matplotlib
+plotly
+statsmodels
+pmdarima
+arch
+scipy
+pandas
+numpy
